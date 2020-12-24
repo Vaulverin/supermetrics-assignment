@@ -25,7 +25,7 @@ class Application {
         $this->stats = $stats;
     }
     
-    function calculateStats() {
+    function calculateStats(): array {
         $postsIterator = new PostsIterator($this->postsApi);
     
         foreach ($postsIterator as $post) {
@@ -43,7 +43,7 @@ class Application {
     
     function start() {
         $statsResult = $this->calculateStats();
-        echo json_encode($statsResult);
+        echo json_encode($statsResult, JSON_PRETTY_PRINT);
         echo PHP_EOL;
     }
 }

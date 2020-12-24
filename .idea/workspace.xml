@@ -4,9 +4,8 @@
     <list default="true" id="55201278-9835-49b5-8e06-ace7c5432fbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/posts/PostsIterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/PostsIterator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/api/PostsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/api/PostsResponse.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectId" id="1m6Lew7MV3xaLVimZoFis2m82pi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -45,6 +45,16 @@
       <recent name="$PROJECT_DIR$/src/posts" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608809192974</updated>
-      <workItem from="1608809194081" duration="9669000" />
+      <workItem from="1608809194081" duration="15253000" />
     </task>
     <servers />
   </component>
