@@ -1,4 +1,5 @@
-#Supermetrics ASSIGNMENT
+# Supermetrics ASSIGNMENT
+
 Version of PHP 7.2+
 
 To start the app run `php index.php`.
