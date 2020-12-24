@@ -10,7 +10,7 @@ class PostsIterator implements \Iterator {
     
     protected $postsApi;
     protected $key = 0;
-    protected $page = 0;
+    protected $page = 1;
     protected $buffer = [];
     
     function __construct(ApiInterface $postsApi) {
@@ -39,6 +39,12 @@ class PostsIterator implements \Iterator {
         }
         $this->setNextBuffer();
         return count($this->buffer) > 0;
+    }
+    
+    public function reset() {
+        $this->page = 1;
+        $this->buffer = [];
+        $this->rewind();
     }
     
     protected function setNextBuffer() {

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55201278-9835-49b5-8e06-ace7c5432fbb" name="Default Changelist" comment="" />
+    <list default="true" id="55201278-9835-49b5-8e06-ace7c5432fbb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/PostsIterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/PostsIterator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/api/PostsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/posts/api/PostsResponse.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608809192974</updated>
-      <workItem from="1608809194081" duration="5016000" />
+      <workItem from="1608809194081" duration="9669000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,10 @@
 <?php
+spl_autoload_register(function ($class_name) {
+    $class_name = str_replace('\\', '/', $class_name);
+    include './src/' . $class_name . '.php';
+});
 
-use posts\api\ApiInterface;
-use posts\PostsIterator;
+use posts\api\SupermetricsApi;
 use posts\stats\StatInterface;
 
 const API_HOST = 'https://api.supermetrics.com';
@@ -11,21 +14,13 @@ const CLIENT_NAME = 'Aleksandr Vaulin';
 
 /** @var StatInterface[] $stats */
 $stats = [];
-/** @var ApiInterface $postsApi */
-$postsApi = null;
-$postsIterator = new PostsIterator($postsApi);
+$postsApi = new SupermetricsApi(
+    API_HOST,
+    CLIENT_ID,
+    CLIENT_EMAIL,
+    CLIENT_NAME
+);
 
-foreach ($postsIterator as $post) {
-    foreach ($stats as $stat) {
-        $stat->accumulatePost($post);
-    }
-}
+$app = new Application($postsApi, $stats);
 
-$result = [];
-
-foreach ($stats as $stat) {
-    $result[$stat->getName()] = $stat->getResult();
-}
-
-echo json_encode($result);
-echo PHP_EOL;
+$app->start();

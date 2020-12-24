@@ -4,15 +4,15 @@ namespace posts;
 class Post {
     protected $user;
     protected $date;
-    protected $text;
+    protected $message;
     
-    function __construct(string $user,\DateTime $date, string $text) {
+    function __construct(string $user,\DateTime $date, string $message) {
         $this->user = $user;
         $this->date = $date;
-        $this->text = $text;
+        $this->message = $message;
     }
     
     function getUser() { return $this->user; }
     function getDate() { return $this->date; }
-    function getText() { return $this->text; }
+    function getMessage() { return $this->message; }
 }
